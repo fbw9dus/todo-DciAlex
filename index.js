@@ -14,6 +14,12 @@ const inputHandlerFactory = (button,input,x)=> {
         body.append(h2);
         // h2.append(x);
     }
+    button.addEventListener('click',addText)
+    // const deleteX = ()=>{
+        
+
+        
+    // }
 }
 inputHandlerFactory(btn,input);
 
