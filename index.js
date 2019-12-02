@@ -11,7 +11,7 @@ const inputHandlerFactory = (button,input)=> {
         h2.style.display = 'flex';
         h2.style.justifyContent = 'space-between'
         
-        x = document.createElement('span');
+        x = document.createElement('button');
         x.setAttribute("class","Xspan")
         x.innerText = "X"
         body.append(h2);
@@ -24,7 +24,7 @@ inputHandlerFactory(btn,input);
 
 
 body.addEventListener('click',e =>{
-    if(e.target.tagName === 'SPAN'){
+    if(e.target.className === 'Xspan'){
         e.target.closest('H2').remove();
     }
 });
